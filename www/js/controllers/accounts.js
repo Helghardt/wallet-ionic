@@ -67,12 +67,13 @@ angular.module('generic-client.controllers.accounts', [])
                         $rootScope.user = JSON.parse($window.localStorage.getItem('user'));
 
                         // Check if a mobile number was used for registration
-                        if (typeof res.data.user.mobile_number != 'undefined' &&
-                            res.data.user.mobile_number != '') {
-                            $scope.ShowModalVerify()
-                        } else {
-                            $state.go('app.home');
-                        }
+                        //if (typeof res.data.user.mobile_number != 'undefined' &&
+                        //    res.data.user.mobile_number != '') {
+                        //    $scope.ShowModalVerify()
+                        //} else {
+                        //    $state.go('app.home');
+                        //}
+                        $state.go('app.home');
                     } else {
                         $ionicPopup.alert({title: $translate.instant("ERROR"), template: res.data.message});
                     }
