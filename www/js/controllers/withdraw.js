@@ -38,6 +38,7 @@ angular.module('generic-client.controllers.withdraw', [])
                         var items = [];
                         for (var i = 0; i < res.data.length; i++) {
                             items.push(res.data[i]);
+                            $scope.item_exists = true
                         }
                         $scope.items = items;
                         $window.localStorage.setItem('myBankAccounts', JSON.stringify(items));
