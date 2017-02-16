@@ -44,20 +44,21 @@ angular.module('generic-client', ['ionic',
         $httpProvider.interceptors.push('authInterceptor');
     })
 
-    .config(['$translateProvider', function($translateProvider) {
+    .config(['$translateProvider', function ($translateProvider) {
         $translateProvider
-        .useStaticFilesLoader({
-            prefix: 'translations/',
-            suffix: '.json'
-        })
-        .preferredLanguage('en')
-        .fallbackLanguage('en')
-        .useMissingTranslationHandlerLog()
-        .useSanitizeValueStrategy('sanitize');
+            .useStaticFilesLoader({
+                prefix: 'translations/',
+                suffix: '.json'
+            })
+            .preferredLanguage('en')
+            .fallbackLanguage('en')
+            .useMissingTranslationHandlerLog()
+            .useSanitizeValueStrategy('sanitize');
     }])
 
     .run(function ($window, $ionicPlatform, $rootScope, Auth, $state, $translate) {
         $ionicPlatform.ready(function () {
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {
