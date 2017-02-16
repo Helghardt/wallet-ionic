@@ -25,7 +25,7 @@
   "PIN": "Pin",
   "UPLOAD": "Upload",
 
-  "IDENTIFIER": "Email or mobile number",
+  "IDENTIFIER": "Email",
   "IDENTIFIER_PLACEHOLDER": "e.g hello@getslideapp.com",
   "IDENTIFIER_REQUIRED_MESSAGE": "Please enter an identifier.",
   "COMPANY": "Company",
