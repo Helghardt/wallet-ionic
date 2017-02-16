@@ -3,7 +3,7 @@
         <ion-refresher pulling-text="pull to refresh" on-refresh="refreshData()"></ion-refresher>
         <div class="list-default">
             <div class="block">
-                <div ng-repeat="item in items">
+                <div ng-if="item_exists" ng-repeat="item in items">
                     <div ui-sref="app.withdraw_to_bank_account({account: item.code})">
                         <div class="item item-avatar item-icon-left no-padding">
                             <i class="icon ion-ios-circle-outline"></i>
