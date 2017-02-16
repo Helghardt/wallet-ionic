@@ -30,13 +30,6 @@
                     </div>
                 </label>
                 <label class="item item-input item-stacked-label">
-                    <span class="input-label" translate="COMPANY"></span>
-                    <input ng-model="user.company_id" type="text" name="company_id" placeholder="{{'COMPANY_PLACEHOLDER' | translate}}" required>
-                    <div ng-messages="signupForm.company_id.$error" role="alert" ng-show='signupForm.$submitted || signupForm.company_id.$dirty'>
-                        <div ng-message="required" class="form-error" translate="COMPANY_REQUIRED_MESSAGE"></div>
-                    </div>
-                </label>
-                <label class="item item-input item-stacked-label">
                     <span class="input-label" translate="PASSWORD"></span>
                     <input ng-model="user.password1" type="password" name="password1" placeholder="{{'PASSWORD_PLACEHOLDER' | translate}}" required>
                     <div ng-messages="signupForm.password1.$error" role="alert" ng-show='signupForm.$submitted || signupForm.password1.$dirty'>
