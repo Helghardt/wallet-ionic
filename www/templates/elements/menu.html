@@ -21,7 +21,7 @@
             <div class="row app-side-menu-profile">
                 <div class="col-20">
                     <div class="row">
-                        <img class="circle-base profile-image" ng-src="{{ user.profile || 'img/profile_1.png' }}" ui-sref="app.profile_image"/>
+                        <img class="circle-base profile-image" menu-close ng-src="{{ user.profile || 'img/profile_1.png' }}" ui-sref="app.profile_image"/>
                     </div>
                 </div>
                 <div class="col-80">
@@ -41,6 +41,15 @@
                 <ion-item menu-close ui-sref="app.withdraw_to">
                     {{'WITHDRAW' | translate}}
                 </ion-item>
+                <!--<ion-item menu-close ui-sref="app.receive">-->
+                    <!--{{'RECEIVE' | translate}}-->
+                <!--</ion-item>-->
+                <!--<ion-item menu-close ui-sref="app.currency_accounts">-->
+                    <!--{{'ACCOUNTS' | translate}}-->
+                <!--</ion-item>-->
+                <!--<ion-item menu-close ui-sref="app.promotion_code">-->
+                    <!--{{'PROMOTIONS' | translate}}-->
+                <!--</ion-item>-->
                 <ion-item menu-close ui-sref="app.settings">
                     {{'SETTINGS' | translate}}
                 </ion-item>
