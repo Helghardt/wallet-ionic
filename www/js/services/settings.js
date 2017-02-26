@@ -132,7 +132,7 @@ angular.module('generic-client.services.settings', [])
         };
     })
 
-    .service('Email', function ($http, API) {
+    .service('Email', function ($http, API, COMPANY) {
         'use strict';
         var self = this;
 
@@ -157,10 +157,10 @@ angular.module('generic-client.services.settings', [])
             return $http.delete(API + '/users/emails/'+ email_id + '/');
         };
 
-        self.resendVerification = function (email_address, company_id) {
+        self.resendVerification = function (email_address) {
             return $http.post(API + '/auth/email/verify/resend/', {
                 identifier: email_address,
-                company_id: company_id
+                company_id: COMPANY
             });
         };
     })
@@ -190,10 +190,10 @@ angular.module('generic-client.services.settings', [])
             return $http.delete(API + '/users/mobiles/'+ mobile_id + '/');
         };
 
-        self.resendVerification = function (mobile_number, company_id) {
+        self.resendVerification = function (mobile_number) {
             return $http.post(API + '/auth/mobile/verify/resend/', {
                 identifier: mobile_number,
-                company_id: company_id
+                company_id: COMPANY
             });
         };
     })
