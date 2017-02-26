@@ -116,11 +116,10 @@ angular.module('generic-client.services.accounts', [])
         var self = this;
 
         // add authentication methods here
-        self.register = function (first_name, email, mobile_number, password1, password2) {
+        self.register = function (first_name, email, password1, password2) {
             return $http.post(API + '/auth/register/', {
                 first_name: first_name,
                 email: email,
-                mobile_number: mobile_number,
                 company_id: COMPANY,
                 password1: password1,
                 password2: password2
