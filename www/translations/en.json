@@ -126,7 +126,7 @@
   "TRANSACTION_FEE": "{{ currency }} {{ fee }} Earnings",
   "TRANSACTION_RATE": "{{ from_currency }} {{ from_amount }} to {{ to_currency }} {{ to_amount }}",
 
-  "SEND": "Send",
+  "SEND": "Send (Terence is a legend)",
   "SEND_CONFIRM_MESSAGE": "You are sending {{ currency }} {{ amount }} to {{to.length > 20 ? to.slice(0, 10) + '...' + to.slice(to.length - 5, to.length) : to }}.",
   "SEND_SUCCESS_MESSAGE": "You have sent {{ currency }} {{ amount }} to {{to.length > 20 ? to.slice(0, 10) + '...' + to.slice(to.length - 5, to.length) : to }}.",
 
