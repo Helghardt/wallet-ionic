@@ -96,7 +96,7 @@ angular.module('generic-client.controllers.accounts', [])
                 User.login(form.identifier.$viewValue, form.password.$viewValue).then(function (res) {
                     $ionicLoading.hide();
                     $rootScope.user = JSON.parse($window.localStorage.getItem('user'));
-
+                    form.$setPristine();
                     if (res.status === 200) {
                         $state.go('app.home');
                     } else {
